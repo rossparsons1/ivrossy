@@ -22,5 +22,5 @@ function showSlides(n) {
         slide.style.display = "none";
     }
     /* Делаем элемент блочным: */
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.display = "flex";
 }
