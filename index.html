@@ -2,14 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="src/style.css" type="text/css" rel="stylesheet">
     <title>ЗАО ИВроссы</title>
 </head>
 <body>
 
-<header class="head marg">
-    <div class="logo">
-        <div class="pic"><img src="src/logo/logo.svg" alt="Логотип" class="pic_logo"></div>
+<header>
+    <div class="head marg">
+        <div class="logo">
+            <div class="pic"><img src="src/logo/logo.svg" alt="Логотип" class="pic_logo"></div>
+        </div>
+        <div class="nav-menu-header">
+            <ul>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#about">Об ЗАО ИВроссы</a></li>
+                <li><a href="#certificate">Сертификаты</a></li>
+            </ul>
+        </div>
     </div>
 </header>
 
@@ -177,7 +187,7 @@
     </section>
 
 
-    <section class="news marg">
+    <section id="news" class="news marg">
         <h1 class="news_title">Новости</h1>
         <div class="news_items">
             <div class="news_item">
@@ -209,24 +219,32 @@
                         Начало вебинара: 14-00
                         Продолжительность вебинара 1 час.
                         Способ проведения: онлайн</p>
-                    <p class="news_date">18.05.2023 16:26</p>
+                    <p class="news_date">26.10.2021 09:00</p>
                 </div>
             </div>
             <div class="news_item">
-                <div class="news_item-top_side"></div>
-                <div class="news_item-down_side"></div>
+                <div class="news_item-top_side"><h1 class="news_item_title">Важное перед началом работы с 1С в начале
+                    2021 года</h1></div>
+                <div class="news_item-down_side">
+                    <p> Выполните вход в базу данных как обычно, 1С предложит вам обновить
+                        программу доступа (ваши данные никак не изменятся от данных действий, никакого риска нет):<br>
+                        <a href="https://cloud.ivross.ru/s/7xscHeD5Xw6DD24">Необходимые действия по обновлению платформы. Инструкция</a><br>
+                        В случае возникновения сложностей с обновлением, обратитесь по нижеуказанным телефонам специалистов АО «ИВроссы»:<br>
+                        Нурулин Андрей  тел. 62-02-23<br>
+                        Оленев Игорь тел. 62-60-38</p>
+                    <p class="news_date">10.01.2021 23:44</p></div>
             </div>
         </div>
     </section>
 
 
-    <section class="about_main marg">
+    <section id="about" class="about_main marg">
         <div class="about_main-left_side">
             <img src="./src/logo/logo.svg" alt="Логотип" class="about_main-left_side-logo">
         </div>
         <div class="about_main-right_side">
             <b class="about_main-title">
-                О ИВроссы
+                Об ЗАО ИВроссы
             </b>
             <p class="about_main-info">
                 Наша фирма оказывает поддержку бухгалтерского учета уже более 12ти лет. Мы оказываем услуги более чем
@@ -255,7 +273,7 @@
     </section>
 
 
-    <section class="certificates">
+    <section id="certificate" class="certificates">
         <div class="certificates_title"><b>Сертификаты</b></div>
         <div class="certificates_pics"><img src="src/certificates/1.jpg" alt="" class="certificates_pic"/>
             <img src="src/certificates/2.jpg" alt="Сертификат" class="certificates_pic"/>
