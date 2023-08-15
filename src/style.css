@@ -51,11 +51,10 @@ header{
 
 .section_main{
     height: 760px;
-    margin-top: 20px;
 }
 
 .slider{
-    max-width: 90%;
+    max-width: 100%;
     position: relative;
     list-style-type: none;
     margin: auto;
@@ -92,6 +91,7 @@ header{
 }
 
 .slider .item {
+    background-image: linear-gradient(180deg, #3598dc 0%, #ffffff 100%);
     object-fit: cover;
     width: 100%;
     height: 760px;
@@ -102,7 +102,6 @@ header{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -111,8 +110,12 @@ header{
     border-radius: 0 3px 3px 0;
 }
 
+.slider .previousButton{
+    left: 20px;
+}
+
 .slider .nextButton {
-    right: 0;
+    right: 20px;
     border-radius: 3px 0 0 3px;
 }
 
@@ -133,6 +136,54 @@ header{
     to {
         opacity: 1
     }
+}
+
+.news{
+    margin-top: 180px;
+}
+
+.news_title{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.news_items{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 90px;
+}
+
+.news_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    width: 430px;
+    height: 450px;
+    background-color: #3598dc;
+}
+
+.news_item-top_side{
+    width: auto;
+    height: 150px;
+}
+
+.news_date{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.news_item-down_side{
+    width: auto;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.news_item-down_side p a{
+    color: black;
 }
 
 .about_main{
@@ -166,7 +217,7 @@ header{
 }
 
 .certificates{
-    margin-top: 90px;
+    margin-top: 180px;
 }
 
 .certificates_title{
