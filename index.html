@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="src/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <title>ЗАО ИВроссы</title>
 </head>
 <body>
@@ -27,8 +29,8 @@
 
 
     <section class="section_main">
-        <div class="slider">
-            <div class="item marg">
+        <div class="slider owl-carousel">
+            <div class="item">
                 <div class="slide_left-side">
                     <h1 class="slide_title">Сопровождение 1С</h1>
                     <p class="slide_subtitle">Виды услуг по сопровождению 1С.</p>
@@ -181,8 +183,6 @@
                 <div class="slide_right-side">
                 </div>
             </div>
-            <a class="previousButton" onclick="previousSlide()">&#10094;</a>
-            <a class="nextButton" onclick="nextSlide()">&#10095;</a>
         </div>
     </section>
 
@@ -297,6 +297,18 @@
     <div class="links"></div>
 </footer>
 
-<script src="src/script.js"></script>
+<script src="./src/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+<script src="./src/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script>$(document).ready(function(){
+    $('.owl-carousel').owlCarousel(
+        {
+            items: 1,
+            nav: false,
+            loop:true, //Зацикливаем слайдер//Отступ от элемента справа в 50px
+            autoplay:true, //Автозапуск слайдера
+            autoplayTimeout:5000,
+        }
+    );
+});</script>
 </body>
 </html>
