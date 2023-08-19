@@ -24,8 +24,3 @@
 //     /* Делаем элемент блочным: */
 //     slides[slideIndex - 1].style.display = "flex";
 // }
-
-let slideIndex = 1;
-const slides = document.querySelectorAll('.item');
-
-console.log(slides);
