@@ -280,7 +280,7 @@
             <img src="src/certificates/3.jpg" alt="Сертификат" class="certificates_pic"/>
             <img src="src/certificates/4.jpg" alt="Сертификат" class="certificates_pic"/>
             <img src="src/certificates/5.jpg" alt="Сертификат" class="certificates_pic"/>
-            <!--            <img src="src/certificates/6.jpg" alt="Сертификат" class="certificates_pic"/>-->
+            <img src="src/certificates/6.jpg" alt="Сертификат" class="certificates_pic"/>
         </div>
     </section>
 
@@ -302,11 +302,12 @@
 <script>$(document).ready(function(){
     $('.owl-carousel').owlCarousel(
         {
+            margin: 50,
+            stagePadding: 50,
             items: 1,
-            nav: false,
-            loop:true, //Зацикливаем слайдер//Отступ от элемента справа в 50px
-            autoplay:true, //Автозапуск слайдера
-            autoplayTimeout:5000,
+            nav: true,
+            loop:true,
+            autoplay:true,
         }
     );
 });</script>

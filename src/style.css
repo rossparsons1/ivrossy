@@ -85,6 +85,7 @@ html{
 
 .section_main{
     height: 760px;
+    background-image: linear-gradient(180deg, #3598dc 0%, #ffffff 100%);
 }
 
 .slider{
@@ -99,7 +100,6 @@ html{
 }
 
 .slide_left-side{
-    margin-left: 100px;
     width: 66%;
     display: flex;
     flex-direction: column;
@@ -119,6 +119,7 @@ html{
 }
 
 .slide_title{
+    overflow-wrap: break-word;
     font-size: 40px;
 }
 
@@ -128,6 +129,7 @@ html{
 }
 
 .slide_about{
+    overflow-wrap: break-word;
     margin-top: 20px;
     line-height: 24px;
 }
@@ -135,9 +137,8 @@ html{
 .slider .item {
     display: flex;
     position: relative;
-    background-image: linear-gradient(180deg, #3598dc 0%, #ffffff 100%);
     object-fit: cover;
-    min-width: 100%;
+    min-width: 90%;
     height: 760px;
 }
 
@@ -202,14 +203,13 @@ html{
     width: 430px;
     height: 450px;
     background-color: #3598dc;
-    border: 2px black solid;
     color: white;
 }
 
 .news_item-top_side{
     width: auto;
     height: 150px;
-    padding-top: 30px;
+    padding: 30px 10px 0 10px;
 }
 
 .news_date{
@@ -224,6 +224,7 @@ html{
     flex-direction: column;
     justify-content: flex-end;
     line-height: 24px;
+    padding: 0 10px 10px 10px;
 }
 
 .news_item-down_side p a{
@@ -266,20 +267,21 @@ html{
 }
 
 .certificates_title{
-    display: flex;
+    display: grid;
     justify-content: center;
     font-size: 40px;
 }
 
 .certificates_pics{
     margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 40px;
+    justify-items: center;
 }
 
 .certificates_pic{
     height: 250px;
-    margin-left: 20px;
 }
 
 footer{
@@ -308,7 +310,11 @@ footer{
 }
 
 @media screen and (max-width: 960px) {
+    .slider .item {
+        flex-direction: column;
+    }
     .slide_left-side{
+        width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -336,7 +342,7 @@ footer{
         align-items: center;
         margin-left: 0;
     }
-    .certificates{
-        display: none;
+    .certificates_pics{
+        grid-template-columns: 50% 50%;
     }
 }
