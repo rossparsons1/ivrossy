@@ -328,7 +328,7 @@ footer{
 }
 
 .close_button{
-    background-image: url("res/Close.svg");
+    background-image: url("./res/Close.svg");
     background-size: cover;
     position: relative;
     top: 3%;
