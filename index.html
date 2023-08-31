@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="src/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="./src/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./src/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link href="src/style.css" type="text/css" rel="stylesheet">
     <title>ЗАО ИВроссы</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
 
 
     <section class="section_main">
-        <div class="slider owl-carousel">
+        <div id="slider" class="slider owl-carousel owl-theme">
             <div class="item">
                 <div class="slide_left-side">
                     <h1 class="slide_title">Сопровождение 1С</h1>
@@ -204,6 +204,7 @@
                         можно через нашу организацию АО «ИВроссы», так как мы являемся партнером компании <a
                                 href="https://www.basealt.ru/partners?w=%D0%98%D0%B2%D1%80%D0%BE%D1%81%D1%81%D1%8B&s=&r=">«Базальт
                             СПО»</a> и имеем возможность поставлять их программные продукты.</p>
+                    <button class="any_button news_popup">Подробнее</button>
                     <p class="news_date">18.05.2023 16:26</p>
                 </div>
             </div>
@@ -219,6 +220,7 @@
                         Начало вебинара: 14-00
                         Продолжительность вебинара 1 час.
                         Способ проведения: онлайн</p>
+                    <button class="any_button news_popup">Подробнее</button>
                     <p class="news_date">26.10.2021 09:00</p>
                 </div>
             </div>
@@ -232,6 +234,7 @@
                         В случае возникновения сложностей с обновлением, обратитесь по нижеуказанным телефонам специалистов АО «ИВроссы»:<br>
                         Нурулин Андрей  тел. 62-02-23<br>
                         Оленев Игорь тел. 62-60-38</p>
+                    <button class="any_button news_popup">Подробнее</button>
                     <p class="news_date">10.01.2021 23:44</p></div>
             </div>
         </div>
@@ -268,9 +271,16 @@
                 сотрудников часто возникают вопросы и/или проблемы, связанные с программным обеспечением, необходимость
                 в
                 отладке и настройке 1С.
-            </p></div>
+            </p>
+            <button class="any_button price_list">Прайс-лист</button>
+        </div>
 
     </section>
+
+<!--    <section class="text-popup_elems">-->
+<!--        <div class="popup_elem"></div>-->
+<!--        <div class="close_button"></div>-->
+<!--    </section>-->
 
 
     <section id="certificate" class="certificates">
@@ -307,9 +317,10 @@
 <script>$(document).ready(function(){
     $('.owl-carousel').owlCarousel(
         {
-            margin: 50,
-            stagePadding: 50,
+            margin: 80,
+            stagePadding: 70,
             items: 1,
+            dots: true,
             nav: true,
             loop:true,
             autoplay:true,

@@ -27,8 +27,6 @@ html{
 .nav-menu-header{
     height: auto;
     width: 100%;
-    /*margin-top: auto;*/
-    /*margin-bottom: auto;*/
     color: white;
 }
 
@@ -142,40 +140,39 @@ html{
     height: 760px;
 }
 
-.slider .previousButton, .slider .nextButton {
-    cursor: pointer;
+.owl-prev, .owl-next {
+    width: 0;
+    height: 0;
+    color: black;
     position: absolute;
     top: 50%;
-    width: auto;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    transform: translateY(-50%);
+    display: block !important;
+    border:0 solid black;
+}
+.owl-prev { left: 20px; }
+
+.owl-next { right: 20px; }
+
+.owl-prev span{
+    font-size: 50px;
 }
 
-.slider .previousButton{
-    left: 20px;
+.owl-next span{
+    font-size: 50px;
 }
 
-.slider .nextButton {
-    right: 20px;
-    border-radius: 3px 0 0 3px;
-}
-
-.slider .previous:hover,
-.slider .next:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-@keyframes fade {
-    from {
-        opacity: 0.4
-    }
-    to {
-        opacity: 1
-    }
+.owl-dot span {
+    background-color: #333;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    width: 12px;
+    filter: Alpha(Opacity=500);/*IE7 fix*/
+    opacity: 0.5;
 }
 
 .news{
@@ -231,6 +228,24 @@ html{
     color: white;
 }
 
+.any_button{
+    width: 150px;
+    padding: 10px 10px;
+    background: none;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+.any_button:hover{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.news_popup{
+    margin-top: 10px;
+    color: white;
+    border-color: white;
+}
 
 .about_main{
     display: flex;
@@ -262,6 +277,10 @@ html{
     font-size: 20px;
 }
 
+.price_list{
+    margin-top: 10px;
+}
+
 .certificates{
     margin-top: 180px;
 }
@@ -282,6 +301,7 @@ html{
 
 .certificates_pic{
     height: 250px;
+    cursor: pointer;
 }
 
 footer{
@@ -317,7 +337,6 @@ footer{
 }
 
 .popup_elem{
-    /*display: none;*/
     position: fixed;
     top: 50px;
     width: 40%;
@@ -335,6 +354,7 @@ footer{
     left: 23%;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 @media (min-width: 961px) and (max-width: 1450px) {

@@ -5,7 +5,6 @@ const close_button = popup.querySelector('.close_button');
 
 for (let i = 0; i < certificates.length; i++) {
     certificates[i].addEventListener('click', show_certificates)
-    console.log(i);
 }
 
 close_button.addEventListener('click', close_popup);
